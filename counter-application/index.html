@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Counter APPlication</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Counter Application</h1>
+
+    <div class="container">
+
+        <div class="number">0</div>
+
+        <div class="buttons">
+
+            <button type="button" class="btn_1">+</button>
+
+            <button type="button" class="btn_2">-</button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        let increment = document.querySelector(".btn_1");
+
+        let decrement = document.querySelector(".btn_2");
+
+
+
+        let add = document.querySelector(".number");
+
+        let sub = 0;
+
+
+
+        increment.addEventListener("click", function(){
+
+            document.querySelector(".number").style.color = "#38b000";
+
+            sub += 1;
+
+            add.innerHTML = sub;
+
+        });
+
+        decrement.addEventListener("click", function(){
+
+            document.querySelector(".number").style.color = "#d01e11";
+
+            sub -= 1;
+
+            add.innerHTML = sub;
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+
+
+
